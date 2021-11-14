@@ -1,0 +1,30 @@
+[
+    {
+        "content": "Trang chủ", 
+        "link": "/"
+    },
+    {
+        "content": "Giới thiệu", 
+        "link": "/about"
+    },
+    {
+        "content": "Vị trí", 
+        "link": "/location"
+    },
+    {
+        "content": "Mặt bằng", 
+        "link": "/ground"
+    },
+    {
+        "content": "Liên hệ", 
+        "link": "/contact"
+    },
+    {
+        "content": "Giá bán", 
+        "link": "/price"
+    },
+    {
+        "content": "Giá thuê", 
+        "link": "/rental-price"
+    }
+]

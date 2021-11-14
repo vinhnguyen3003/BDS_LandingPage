@@ -1,0 +1,191 @@
+@import "../../stylesheets/variable";
+
+.section-ground {
+  position: relative;
+}
+.section-ground.--unset-height {
+  height: unset;
+}
+.section-ground-image {
+  width: 100%;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.section-ground-see {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: $txt-white;
+    background-color: $dark-main-color;
+    border-radius: 5px;
+    width: 200px;
+    height: 38px;
+    // transition: filter 0.2s linear;
+    &:hover {
+      filter: brightness(1.1);
+    }
+  }
+}
+.section-ground-info {
+  position: absolute;
+  top: 60px;
+  left: 40px;
+  .ground-info-title {
+    h2 {
+      font-size: 2rem;
+      line-height: 2.8rem;
+      font-weight: 700;
+      color: $main-color;
+      position: relative;
+      text-transform: uppercase;
+      &::before {
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-image: url("../../assets/images/title-line.png");
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+      }
+    }
+  }
+  .ground-info-list {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    .ground-info-item {
+      span {
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: $txt-white;
+        background-color: rgba(203, 159, 84, 0.7);
+        border-radius: 10px;
+        transition: 0.2s linear;
+        cursor: pointer;
+        &:hover {
+          background-color: $main-color;
+        }
+      }
+    }
+  }
+}
+.ground-page-modal-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/ground-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+  }
+}
+.ground-page-modal {
+  padding: 50px 0 50px;
+  max-width: 1150px;
+  width: 100%;
+  position: relative;
+  z-index: 4;
+}
+.ground-page-modal__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  .ground-modal-title {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-weight: 700;
+    color: $main-color;
+    position: relative;
+    text-transform: uppercase;
+    &::before {
+      content: "";
+      width: 100%;
+      height: 4px;
+      background-image: url("../../assets/images/title-line.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+    }
+  }
+  .ground-modal-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    .ground-modal-info__item {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 110px;
+      height: 40px;
+      font-size: 1.4rem;
+      color: $txt-white;
+      text-transform: uppercase;
+      border: 1px solid $txt-white;
+      cursor: pointer;
+      transition: filter, background-color 0.2s linear;
+      &:hover {
+        background-color: $dark-bg-color;
+        filter: brightness(1.3);
+      }
+      &.--active {
+        background-color: $dark-bg-color;
+      }
+    }
+  }
+}
+.ground-page-modal__center {
+  margin-top: 40px;
+  .ground-modal-image {
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 3px;
+    }
+  }
+}
+.ground-page-modal__bottom {
+  width: 100%;
+  text-align: center;
+  color: $txt-white;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 35px;
+  cursor: pointer;
+  transition: color 0.2s linear;
+  &:hover {
+    color: $main-color;
+  }
+  span {
+    margin-right: 5px;
+    font-size: 1.4rem;
+  }
+}

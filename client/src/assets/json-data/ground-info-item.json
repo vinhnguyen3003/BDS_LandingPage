@@ -1,0 +1,81 @@
+
+[
+    {
+        "groundName": "Khu căn hộ Akari 1",
+        "groundInfo": [
+            {
+                "title": "Tầng 3",
+                "image": ""
+            },
+            {
+                "title": "Tầng 4-21",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "groundName": "Khu căn hộ Akari 2",
+        "groundInfo": [
+            {
+                "title": "Tầng 3",
+                "image": ""
+            },
+            {
+                "title": "Tầng 4-21",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "groundName": "Khu căn hộ Akari 3",
+        "groundInfo": [
+            {
+                "title": "Tầng 3",
+                "image": ""
+            },
+            {
+                "title": "Tầng 4-21",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "groundName": "Khu căn hộ Akari 4",
+        "groundInfo": [
+            {
+                "title": "Tầng 3",
+                "image": ""
+            },
+            {
+                "title": "Tầng 4-21",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "groundName": "Khu căn hộ Akari 5",
+        "groundInfo": [
+            {
+                "title": "Tầng 3",
+                "image": ""
+            },
+            {
+                "title": "Tầng 4-21",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "groundName": "Khu căn hộ Akari 6",
+        "groundInfo": [
+            {
+                "title": "Tầng 3",
+                "image": ""
+            },
+            {
+                "title": "Tầng 4-21",
+                "image": ""
+            }
+        ]
+    }
+]

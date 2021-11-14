@@ -1,0 +1,38 @@
+@import "../../stylesheets/variable";
+
+.section-content__wrapper {
+  &.section-content-location {
+    background-color: $light-gray-color;
+  }
+}
+.section-location-body {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: $dark-txt-color;
+}
+.section-location-info {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 20px;
+  padding: 10px 0px 10px 15px;
+  border-left: 4px solid $main-color;
+  .location-info-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    span {
+      &:first-child {
+        font-size: 2rem;
+        font-weight: 600;
+        color: $dark-main-color;
+      }
+      &:last-child {
+        margin-top: 8px;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        color: $dark-txt-color;
+      }
+    }
+  }
+}

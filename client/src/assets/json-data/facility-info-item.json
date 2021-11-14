@@ -1,0 +1,115 @@
+
+    {
+        "facility01": [
+            {
+                "color": "blue",
+                "content": "Lối vào"
+            },
+            {
+                "color": "blue",
+                "content": "Bãi đỗ xe"
+            },
+            {
+                "color": "blue",
+                "content": "Bãi xe thương mại (dự kiến)"
+            },
+            {
+                "color": "blue",
+                "content": "Vườn Nhật"
+            },
+            {
+                "color": "blue",
+                "content": "Sân thể thao đa năng"
+            },
+            {
+                "color": "blue",
+                "content": "Sân chơi trẻ em"
+            },
+            {
+                "color": "blue",
+                "content": "Khu thể thao ngoài trời"
+            },
+            {
+                "color": "blue",
+                "content": "BBQ"
+            },
+            {
+                "color": "blue",
+                "content": "Hồ bơi"
+            },
+            {
+                "color": "blue",
+                "content": "Hồ bơi trẻ em"
+            },
+            {
+                "color": "blue",
+                "content": "Khu Picnic"
+            },
+            {
+                "color": "blue",
+                "content": "ClubHouse"
+            },
+            {
+                "color": "blue",
+                "content": "Đường chạy bộ"
+            },
+            {
+                "color": "blue",
+                "content": "Cổng an ninh"
+            },
+            {
+                "color": "orange",
+                "content": "Sảnh chờ sang trọng"
+            },
+            {
+                "color": "orange",
+                "content": "Phòng tập Gym"
+            },
+            {
+                "color": "orange",
+                "content": "Phòng tập Yoga"
+            },
+            {
+                "color": "orange",
+                "content": "Phòng thay đồ & WC"
+            },
+            {
+                "color": "orange",
+                "content": "Phòng giải trí"
+            },
+            {
+                "color": "orange",
+                "content": "Phòng chơi trẻ em"
+            },
+            {
+                "color": "orange",
+                "content": "Phòng họp"
+            },
+            {
+                "color": "orange",
+                "content": "Co-Working space"
+            },
+            {
+                "color": "orange",
+                "content": "Phòng đa năng"
+            },
+            {
+                "color": "orange",
+                "content": "Khu thương mại (dự kiến)"
+            }
+        ],
+        "facility02": [
+            {
+                "color": "blue",
+                "content": "Khu tập thể dục ngoài trời"
+            },
+            {
+                "color": "blue",
+                "content": "Vườn Nhật"
+            },
+            {
+                "color": "blue",
+                "content": "Hoa viên nội khu"
+            }
+        ]
+    }
