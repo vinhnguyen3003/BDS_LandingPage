@@ -14,6 +14,7 @@ function Home() {
     },[])
     return (
         <div className="home">
+            <title>Trang chủ | Akari</title>
             <Banner 
                 seeLinkStatus={true}
                 bannerType={0}

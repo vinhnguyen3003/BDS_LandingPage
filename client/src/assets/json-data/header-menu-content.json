@@ -16,15 +16,15 @@
         "link": "/ground"
     },
     {
-        "content": "Liên hệ", 
-        "link": "/contact"
-    },
-    {
         "content": "Giá bán", 
         "link": "/price"
     },
     {
         "content": "Giá thuê", 
         "link": "/rental-price"
+    },
+    {
+        "content": "Liên hệ", 
+        "link": "/contact"
     }
 ]

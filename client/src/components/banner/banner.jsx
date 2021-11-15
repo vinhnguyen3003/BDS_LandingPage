@@ -1,34 +1,36 @@
 import React from 'react';
 import './banner.scss';
 import HotIcon from '../../assets/images/hot-icon.gif';
-import Test from '../../assets/images/price.jpg';
-import Test2 from '../../assets/images/price02.jpg';
-import Test3 from '../../assets/images/price03.jpg';
+import price01 from '../../assets/images/price.jpg';
+import price02 from '../../assets/images/price02.jpg';
+import price03 from '../../assets/images/price03.jpg';
+import rentalPrice01 from '../../assets/images/rental-price01.jpg';
+import rentalPrice02 from '../../assets/images/rental-price02.jpg';
+import rentalPrice03 from '../../assets/images/rental-price03.jpg';
+import rentalPrice04 from '../../assets/images/rental-price04.jpg';
 import Coop from '../../assets/images/co-op-logo.jpg';
 import Coop2 from '../../assets/images/co-op-logo02.jpg';
 import Coop3 from '../../assets/images/co-op-logo04.jpg';
 import Coop4 from '../../assets/images/co-op-logo05.png';
 import { Link } from 'react-router-dom';
 
+
+const priceImage = [price01, price02, price03];
+
+const rentalPriceImage = [rentalPrice01, rentalPrice02, rentalPrice03, rentalPrice04]
 function Banner({seeLinkStatus, bannerType, bannerTitle, bannerInfoList}) {
     return (
-        <section className="section-wrapper section-banner --reverse">
+        <section className={`section-wrapper section-banner --reverse ${bannerType === 1 ? '--rental-price' : ''}`}>
             <div className="section-image">
                 {
-                    bannerType === 0 ?
-                        <div className="section-image__wrapper section-banner__wrapper">
-                            <div className="banner-image">
-                                <img src={Test} alt="" />
-                            </div>
-                            <div className="banner-image">
-                                <img src={Test2} alt="" />
-                            </div>
-                            <div className="banner-image">
-                                <img src={Test3} alt="" />
-                            </div>
-                        </div>:
-                        <div className="section-banner__rental-price">
-                            <img src="" alt="" />
+                        <div className={`section-image__wrapper section-banner__wrapper ${bannerType === 1 ? '--rental' : ''}`}>
+                            {
+                                (bannerType === 0 ? priceImage : rentalPriceImage).map((img, index)=>(
+                                    <div className={`${bannerType === 0 ?'banner-image' : 'banner-image-rental'}`} key={index}>
+                                        <img src={img} alt="" />
+                                    </div>
+                                )) 
+                            }
                         </div>
                 }
             </div>
