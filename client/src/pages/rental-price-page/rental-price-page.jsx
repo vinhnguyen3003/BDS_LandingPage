@@ -5,6 +5,7 @@ import bannerInfoList from '../../assets/json-data/rental-price-list.json';
 function RentalPricePage(props) {
     return (
         <div>
+            <title>Giá thuê | Akari</title>
             <Banner 
                 seeLinkStatus={false}
                 bannerType={1}

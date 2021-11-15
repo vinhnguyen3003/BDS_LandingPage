@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import Ground from '../../components/ground/ground';
 import scrollTop from '../../utils/scrollTop';
-import './ground-page.scss';
 
 function GroundPage() {
     useEffect(()=>{
@@ -9,6 +8,7 @@ function GroundPage() {
     },[])
     return (
         <div>
+            <title>Mặt bằng | Akari</title>
             <Ground status={true}/>
         </div>
     );

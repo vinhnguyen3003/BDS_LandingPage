@@ -15,8 +15,9 @@
       max-width: 1100px;
       width: 100%;
       gap: 8px;
+      grid-template-rows: 400px 400px 400px;
       img {
-        border-radius: 5px;
+        border-radius: 3px;
       }
     }
   }
@@ -111,7 +112,7 @@
       &:last-child {
         padding-left: 40px;
         font-size: 1.8rem;
-        line-height: 2.8rem;
+        line-height: 3rem;
         color: $txt-white;
       }
     }
@@ -166,5 +167,21 @@
     .section-banner-info {
     padding: 15px;
     gap: 15px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .section-banner.--reverse.--rental-price
+    .section-image
+    .section-banner__wrapper.--rental {
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .section-banner.--reverse.--rental-price
+    .section-image
+    .section-banner__wrapper.--rental {
+    grid-template-rows: unset;
   }
 }

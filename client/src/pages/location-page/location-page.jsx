@@ -8,6 +8,7 @@ function LocationPage() {
     },[])
     return (
         <div>
+            <title>Vị trí | Akari</title>
             <Location />
         </div>
     );

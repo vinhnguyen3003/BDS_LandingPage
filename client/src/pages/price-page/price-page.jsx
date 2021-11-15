@@ -9,6 +9,7 @@ function PricePage(props) {
     },[])
     return (
         <div>
+            <title>Giá bán | Akari</title>
             <Banner 
                 seeLinkStatus={false}
                 bannerType={0}

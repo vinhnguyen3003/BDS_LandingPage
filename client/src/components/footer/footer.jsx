@@ -1,21 +1,22 @@
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import './footer.scss';
-import FooterBg from '../../assets/images/footer-bg.jpg';
-import { Link } from 'react-router-dom';
 
 function Footer() {
 
     const [alertMess, setAlertMess] = useState({});
+    const [registerLoading, setRegisterLoading] = useState(false);
     const form = useRef(null);
 
     const sendEmail = (e) => {
         e.preventDefault();
-
-        emailjs.sendForm('gmail', 'bds_landingpage', form.current, 'user_jy8Ds4IQIssDk3ZvJLMLE')
+        setRegisterLoading(true);
+        emailjs.sendForm('Gmail', 'Batdongsannp', form.current, 'Batdongsannp')
         .then((result) => {
             console.log(result.text);
-            setAlertMess({alertType: 'success', content: 'Đăng kí thành công, cảm ơn bạn đã sử dụng dịch vụ'})
+            setAlertMess({alertType: 'success', content: 'Đăng kí thành công, cảm ơn bạn đã sử dụng dịch vụ'});
+            setRegisterLoading(false);
+            setTimeout(()=>{setAlertMess({})}, 3000)
         }, (error) => {
             console.log(error.text);
             setAlertMess({alertType: 'fail', content: 'Có lỗi xảy ra, vui lòng thử lại'})
@@ -26,9 +27,6 @@ function Footer() {
     return (
         <div className="footer-wrapper section-wrapper">
             <div className="section-image footer-left">
-                {/* <div className="section-image__wrapper">
-                    <img src={FooterBg} alt="" />
-                </div> */}
                 <div className="section-content__wrapper footer-left__contact">
                     <div className="section-content-title footer-left-title">
                         <h2>Liên hệ</h2>
@@ -58,10 +56,9 @@ function Footer() {
                             </div>
                             <div className="form-group">
                                 <input
-                                    required 
                                     type="text" 
                                     name="address" 
-                                    placeholder="Địa chỉ"
+                                    placeholder="Địa chỉ *"
                                 />
                             </div>
                             <div className="form-group">
@@ -74,11 +71,13 @@ function Footer() {
                             </div>
                             <div className="form-group --full">
                                 <input
-                                    required 
                                     type="text" 
                                     name="content" 
-                                    placeholder="Nội dung"
+                                    placeholder="Nội dung *"
                                 />
+                            </div>
+                            <div className="form-group --full" style={{fontSize: '1.2rem', color: '#fafafa'}}>
+                                Nội dung * không bắt buộc
                             </div>
                             {
                                 alertMess.alertType ? 
@@ -89,15 +88,21 @@ function Footer() {
                                     </div> : null
                             }
                             <div className="form-group --full --mt">
-                                <button className="form-group-btn">Đăng kí</button>
+                                <button className="form-group-btn">
+                                    {
+                                        registerLoading ? 
+                                        <span className="form-group-btn__loading"></span> :
+                                        'Đăng ký'
+                                    }
+                                </button>
                             </div>
                         </form>
                         <div className="footer-left-form__social">
                             <a href="https://www.facebook.com/AkariiCity/?ref=pages_you_manage">
                                 <i className="fab fa-facebook-f"></i>
                             </a>
-                            <a href="https://www.batdongsannb@gmail.com">
-                                <i className="fab fa-google"></i>
+                            <a href="https://zalo.me/Nen0938330378">
+                                <i className="fas fa-sms"></i>
                             </a>
                             <a href="https://www.youtube.com/watch?v=twMnH5-TeVU">
                                 <i className="fab fa-youtube"></i>
@@ -115,7 +120,7 @@ function Footer() {
                         <h3>Phòng kinh doanh căn hộ AKARI</h3>
                         <p>Địa chỉ: 77-79 Võ Văn Kiệt, phường An Lạc, quận Bình Tân</p>
                         <p>Hotline: 0938 330378</p>
-                        <p>Email: batdongsannb@gmail.com</p>
+                        <p>Email: batdongsannp@gmail.com</p>
                     </div>
                 </div>
             </div>

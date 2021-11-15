@@ -8,6 +8,8 @@ import rentalPrice01 from '../../assets/images/rental-price01.jpg';
 import rentalPrice02 from '../../assets/images/rental-price02.jpg';
 import rentalPrice03 from '../../assets/images/rental-price03.jpg';
 import rentalPrice04 from '../../assets/images/rental-price04.jpg';
+import rentalPrice05 from '../../assets/images/rental-price05.png';
+import rentalPrice06 from '../../assets/images/rental-price06.png';
 import Coop from '../../assets/images/co-op-logo.jpg';
 import Coop2 from '../../assets/images/co-op-logo02.jpg';
 import Coop3 from '../../assets/images/co-op-logo04.jpg';
@@ -17,7 +19,7 @@ import { Link } from 'react-router-dom';
 
 const priceImage = [price01, price02, price03];
 
-const rentalPriceImage = [rentalPrice01, rentalPrice02, rentalPrice03, rentalPrice04]
+const rentalPriceImage = [rentalPrice01, rentalPrice02, rentalPrice03, rentalPrice04, rentalPrice05, rentalPrice06]
 function Banner({seeLinkStatus, bannerType, bannerTitle, bannerInfoList}) {
     return (
         <section className={`section-wrapper section-banner --reverse ${bannerType === 1 ? '--rental-price' : ''}`}>

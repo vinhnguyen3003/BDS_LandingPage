@@ -45,7 +45,7 @@
         }
       }
       &.--mt {
-        margin-top: 20px;
+        margin-top: 15px;
       }
       button {
         width: 160px;
@@ -62,6 +62,23 @@
         cursor: pointer;
         &:hover {
           filter: brightness(1.1);
+        }
+        span.form-group-btn__loading {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          border-style: solid;
+          border-width: 3px;
+          border-color: transparent $txt-white $txt-white $txt-white;
+          animation: spin 2s linear infinite;
+        }
+        @keyframes spin {
+          from {
+            transform: rotate(0);
+          }
+          to {
+            transform: rotate(360deg);
+          }
         }
       }
     }

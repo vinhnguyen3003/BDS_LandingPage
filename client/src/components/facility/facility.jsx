@@ -47,7 +47,7 @@ function Facility(props) {
                                             className={`facility-info-item ${faInIt.color}`}
                                             key={index}
                                         >
-                                            <span>{index}</span>
+                                            <span>{index + 1}</span>
                                             <span>{faInIt.content}</span>
                                         </div>
                                     ))
@@ -68,7 +68,7 @@ function Facility(props) {
                                             className={`facility-info-item ${faInIt.color}`}
                                             key={index}
                                         >
-                                            <span>{index}</span>
+                                            <span>{index + 1}</span>
                                             <span>{faInIt.content}</span>
                                         </div>
                                     ))

@@ -8,6 +8,7 @@ function AboutPage() {
     },[])
     return (
         <div>
+            <title>Giới thiệu | Akari</title>
             <About reverse={true}/>
         </div>
     );
