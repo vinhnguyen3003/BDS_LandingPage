@@ -26,9 +26,9 @@ function Footer() {
     return (
         <div className="footer-wrapper section-wrapper">
             <div className="section-image footer-left">
-                <div className="section-image__wrapper">
+                {/* <div className="section-image__wrapper">
                     <img src={FooterBg} alt="" />
-                </div>
+                </div> */}
                 <div className="section-content__wrapper footer-left__contact">
                     <div className="section-content-title footer-left-title">
                         <h2>Liên hệ</h2>

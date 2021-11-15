@@ -13,6 +13,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    &.section-ground-image__res {
+      display: none;
+    }
   }
 }
 .section-ground-see {
@@ -186,6 +189,70 @@
   }
   span {
     margin-right: 5px;
+    font-size: 1.4rem;
+  }
+}
+
+//Mobile & Tablet
+@media screen and (max-width: 1023px) {
+  .section-wrapper.section-ground {
+    flex-direction: column-reverse;
+  }
+  .ground-page-modal {
+    padding: 30px 20px 30px;
+  }
+}
+//Tablet
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+  .section-ground-see {
+    top: 80%;
+  }
+}
+//Mobile
+@media screen and (max-width: 739px) {
+  .section-ground-image img.section-ground-image__res {
+    display: block;
+  }
+  .section-ground-image img.section-ground-image__nor {
+    display: none;
+  }
+  .section-ground-see {
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .section-ground-see a {
+    font-size: 1.3rem;
+    width: 180px;
+    height: 35px;
+  }
+  .section-ground-info .ground-info-title h2 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+  .section-ground-info .ground-info-list {
+    margin-top: 30px;
+  }
+  .section-ground-info .ground-info-list .ground-info-item span {
+    padding: 10px 15px;
+    font-size: 1.3rem;
+  }
+  .section-ground-info .ground-info-list {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .section-ground-info {
+    top: 10px;
+    left: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .ground-page-modal__top {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .ground-page-modal__bottom {
     font-size: 1.4rem;
   }
 }

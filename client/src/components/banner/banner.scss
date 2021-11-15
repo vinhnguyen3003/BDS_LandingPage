@@ -22,6 +22,13 @@
     }
   }
 }
+.section-banner__rental-price {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
 .section-wrapper.--reverse .section-content__wrapper.section-content-banner {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -44,7 +51,7 @@
   margin-top: 45px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 15px;
   .banner-info-item {
     position: relative;
     span {
@@ -76,7 +83,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   grid-template-rows: 50px;
-  gap: 0 10px;
+  gap: 10px 10px;
   .coop-logo-item {
     width: 100%;
     height: 100%;
@@ -86,5 +93,23 @@
       width: inherit;
       height: inherit;
     }
+  }
+}
+
+//Responsive
+
+//Mobile & Tablet
+@media screen and (max-width: 1023px) {
+  .section-banner-info {
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+  .section-banner-coop-logo {
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  }
+}
+@media screen and (max-width: 420px) {
+  .section-banner-coop-logo {
+    grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
   }
 }

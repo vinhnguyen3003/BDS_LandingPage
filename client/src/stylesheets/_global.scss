@@ -110,3 +110,42 @@
     margin-top: 45px;
   }
 }
+
+//Responsive
+
+//Mobile & Tablet
+@media screen and (max-width: 1023px) {
+  .section-wrapper {
+    height: unset;
+    flex-direction: column;
+  }
+  .section-wrapper.--reverse {
+    flex-direction: column;
+  }
+  .section-image,
+  .section-content {
+    width: 100%;
+  }
+  .section-content::before {
+    display: none;
+  }
+}
+//Mobile
+@media screen and (max-width: 739px) {
+  .section-wrapper.--reverse .section-content__wrapper {
+    padding: 25px 15px 30px 15px;
+  }
+  .section-content__wrapper {
+    padding: 30px 15px 30px 15px;
+  }
+  .section-content__wrapper .section-content-title h2 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+  .section-content__wrapper .section-content-title h2::before {
+    bottom: -12px;
+  }
+  .section-facility-info {
+    margin-top: 30px;
+  }
+}

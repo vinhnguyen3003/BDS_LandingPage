@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './header.scss';
 import LogoImg from '../../assets/images/logo.png';
 import PhoneCall from '../../assets/images/phone-call.png';
@@ -11,6 +11,8 @@ function Header() {
 
     const activeHeaderItem = headerMenuContent.findIndex(heMeCo => heMeCo.link === location.pathname);
 
+    const [headerMenuStatus, setHeaderMenuStatus] = useState(false);
+
     return (
         <div className="header-wrapper">
             <div className="header">
@@ -19,13 +21,14 @@ function Header() {
                         <img src={LogoImg} alt="" />
                     </Link>
                 </div>
-                <div className="header__center">
+                <div className={`header__center ${headerMenuStatus ? '--active' : ''}`}>
                     <ul className="header-center-list">
                         {
                             headerMenuContent.map((heMeCo, index)=>(
                                 <li 
                                     key={index}
                                     className={`header-center-item ${index === activeHeaderItem ? '--active' : ''}`}
+                                    onClick={()=>setHeaderMenuStatus(false)}
                                 >
                                     <Link to={heMeCo.link}>
                                         {heMeCo.content}
@@ -42,6 +45,14 @@ function Header() {
                         </div>
                         <span>0938 330378</span>
                     </a>
+                </div>
+                <div 
+                    className={`header__btn-menu ${headerMenuStatus ? '--active' : ''}`}
+                    onClick={()=>setHeaderMenuStatus(!headerMenuStatus)}
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>

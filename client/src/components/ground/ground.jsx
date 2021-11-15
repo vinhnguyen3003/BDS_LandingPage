@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './ground.scss';
 import GroundImg from '../../assets/images/ground.jpg';
+import GroundImgMobile from '../../assets/images/ground-mobile.jpg';
 import { Link } from 'react-router-dom';
 import GroundImg01_1 from '../../assets/images/ground01_1.jpg';
 import GroundImg01_2 from '../../assets/images/ground01_2.jpg';
@@ -117,7 +118,8 @@ function Ground({status}) {
                 !groundModalStatus ?
                 <>
                     <div className="section-ground-image">
-                        <img src={GroundImg} alt="" />
+                        <img className="section-ground-image__nor" src={GroundImg} alt="" />
+                        <img className="section-ground-image__res" src={GroundImgMobile} alt="" />
                     </div>
                     {
                         !status ?

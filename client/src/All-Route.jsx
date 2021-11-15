@@ -6,6 +6,7 @@ import GroundPage from './pages/ground-page/ground-page';
 import Home from './pages/home-page/home-page';
 import LocationPage from './pages/location-page/location-page';
 import PricePage from './pages/price-page/price-page';
+import RentalPricePage from './pages/rental-price-page/rental-price-page';
 
 function AllRoute() {
     return (
@@ -16,7 +17,7 @@ function AllRoute() {
             <Route path="/ground" element={<GroundPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/price" element={<PricePage />} />
-
+            <Route path="/rental-price" element={<RentalPricePage />}/>
         </Routes>
     );
 }

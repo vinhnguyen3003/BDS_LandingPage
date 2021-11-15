@@ -85,3 +85,28 @@
     }
   }
 }
+
+//Responsive
+
+//Mobile & Tablet
+@media screen and (max-width: 1023px) {
+  .section-facility-info {
+    gap: 15px 10px;
+  }
+  .section-image .section-image-facility .facility-img {
+    position: relative;
+  }
+  .section-image .section-image-facility .facility-img {
+    display: none;
+  }
+  .section-image .section-image-facility .facility-img.--active {
+    display: block;
+  }
+}
+//Mobile
+@media screen and (max-width: 739px) {
+  .section-facility-info .facility-info-item {
+    align-items: flex-start;
+    white-space: normal;
+  }
+}
