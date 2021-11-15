@@ -11,7 +11,7 @@ function Footer() {
     const sendEmail = (e) => {
         e.preventDefault();
         setRegisterLoading(true);
-        emailjs.sendForm('Gmail', 'Batdongsannp', form.current, 'Batdongsannp')
+        emailjs.sendForm('gmail', 'Batdongsannp', form.current, 'user_TaMQA4thMAgj62hfAPXaF')
         .then((result) => {
             console.log(result.text);
             setAlertMess({alertType: 'success', content: 'Đăng kí thành công, cảm ơn bạn đã sử dụng dịch vụ'});

@@ -7,7 +7,7 @@ function RegisterButton() {
     const location = useLocation();
     return (
         <div className={`register-button ${location.pathname === '/contact' ? '--hide' : ''}`}>
-            <Link to="/contact">
+            <Link to="/akari-city/contact">
                 <i className="fas fa-pencil-alt"></i>
                 Đăng ký
             </Link>

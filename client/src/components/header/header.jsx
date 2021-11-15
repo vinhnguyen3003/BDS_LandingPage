@@ -17,7 +17,7 @@ function Header() {
         <div className="header-wrapper">
             <div className="header">
                 <div className="header__left">
-                    <Link to="/" className="header-left-logo">
+                    <Link to="/akari-city" className="header-left-logo">
                         <img src={LogoImg} alt="" />
                     </Link>
                 </div>

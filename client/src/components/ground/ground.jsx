@@ -124,7 +124,7 @@ function Ground({status}) {
                     {
                         !status ?
                             <div className="section-ground-see">
-                                <Link to="/ground">
+                                <Link to="/akari-city/ground">
                                     Xem thông tin chi tiết
                                 </Link>
                             </div> : 

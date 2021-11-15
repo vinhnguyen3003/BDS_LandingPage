@@ -11,13 +11,13 @@ import RentalPricePage from './pages/rental-price-page/rental-price-page';
 function AllRoute() {
     return (
         <Routes>
-            <Route path='/' element={<Home />}/>
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/location" element={<LocationPage />} />
-            <Route path="/ground" element={<GroundPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/price" element={<PricePage />} />
-            <Route path="/rental-price" element={<RentalPricePage />}/>
+            <Route path='/akari-city' element={<Home />}/>
+            <Route path="/akari-city/about" element={<AboutPage />} />
+            <Route path="/akari-city/location" element={<LocationPage />} />
+            <Route path="/akari-city/ground" element={<GroundPage />} />
+            <Route path="/akari-city/contact" element={<ContactPage />} />
+            <Route path="/akari-city/price" element={<PricePage />} />
+            <Route path="/akari-city/rental-price" element={<RentalPricePage />}/>
         </Routes>
     );
 }

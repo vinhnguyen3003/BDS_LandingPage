@@ -42,7 +42,7 @@ function Banner({seeLinkStatus, bannerType, bannerTitle, bannerInfoList}) {
                         <h2>{bannerTitle}</h2>
                         {
                             seeLinkStatus ?
-                            <Link to="/price" className="see-all-link">Xem tất cả</Link>: null
+                            <Link to="/akari-city/price" className="see-all-link">Xem tất cả</Link>: null
                         }
                     </div>
                     <div className="section-banner-info">
