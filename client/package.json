@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "homepage": "https://batdongsannp.com.vn/akari-city",
+  "homepage": "./",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
