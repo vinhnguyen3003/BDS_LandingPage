@@ -1,30 +1,30 @@
 [
     {
         "content": "Trang chủ", 
-        "link": "/akari-city"
+        "link": "/"
     },
     {
         "content": "Giới thiệu", 
-        "link": "/akari-city/about"
+        "link": "/about"
     },
     {
         "content": "Vị trí", 
-        "link": "/akari-city/location"
+        "link": "/location"
     },
     {
         "content": "Mặt bằng", 
-        "link": "/akari-city/ground"
+        "link": "/ground"
     },
     {
         "content": "Giá bán", 
-        "link": "/akari-city/price"
+        "link": "/price"
     },
     {
         "content": "Giá thuê", 
-        "link": "/akari-city/rental-price"
+        "link": "/rental-price"
     },
     {
         "content": "Liên hệ", 
-        "link": "/akari-city/contact"
+        "link": "/contact"
     }
 ]
